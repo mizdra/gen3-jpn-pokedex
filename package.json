@@ -41,6 +41,6 @@
     "dist"
   ],
   "dependencies": {
-    "@mizdra/gen3-poke-data": "^1.0.0"
+    "@mizdra/gen3-poke-data": "^2.0.0"
   }
 }
