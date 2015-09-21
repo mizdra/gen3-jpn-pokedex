@@ -38,11 +38,21 @@ describe('pokedex', () => {
         assert.deepEqual(actual, expect);
     });
 
-    it('複雑なfilter', () => {
+    it('複雑なfilter1', () => {
         let actual = customPokedex.filter(poke =>
-            poke.formName === null && poke.abilities[0] === poke.abilities[1]
+            poke.formName === null && poke.abilities.length === 1
         );
         let expect = [フシギダネ, ピカチュウ];
+        assert.deepEqual(actual, expect);
+    });
+
+    it('複雑なfilter2', () => {
+        let actual = customPokedex.filter(poke =>
+            poke.height > 10
+            && poke.weight > 10
+            && poke.catchRate >10
+        );
+        let expect = [ハピナス];
         assert.deepEqual(actual, expect);
     });
 
@@ -72,7 +82,7 @@ describe('pokedex', () => {
 
     it('複雑なfilter', () => {
         let actual = customPokedex.find(poke =>
-            poke.formName === null && poke.abilities[0] === poke.abilities[1]
+            poke.formName === null && poke.abilities.length === 1
         );
         let expect = フシギダネ;
         assert.deepEqual(actual, expect);
