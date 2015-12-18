@@ -1,18 +1,9 @@
-'use asm';
-import should from 'should';
-import assert from 'assert';
-import pokedex from '../dist';
+import assert from 'power-assert';
+import {sample1} from './sample-object';
+import pokedex from '../';
 import PokeData from '@mizdra/gen3-poke-data';
-import {フシギダネ, ピカチュウ, ハピナス, デオキシス} from './test-object';
 
 describe('pokedex', () => {
-
-    let customPokedex = pokedex.filter(poke =>
-        poke.name === フシギダネ.name
-        || poke.name === ピカチュウ.name
-        || poke.name === ハピナス.name
-        || poke.name === デオキシス.name
-    );
 
     it('filter', () => {
         let actual = customPokedex.filter(poke =>
