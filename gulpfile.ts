@@ -14,7 +14,7 @@ const tsProject = ts.createProject('tsconfig.json');
 gulp.task('clean', del.bind(null, 'lib'));
 
 gulp.task('build:ts', () => {
-    let tsResult = gulp.src('src/**/*.ts', {base: 'src'})
+    let tsResult = gulp.src('src/**/*.ts', { base: 'src' })
         .pipe(sourcemaps.init())
         .pipe(ts(tsProject));
 
@@ -27,10 +27,15 @@ gulp.task('build:ts', () => {
     ]);
 });
 
+gulp.task('copy:json', () => {
+    gulp.src('src/**/*.json', { base: 'src' })
+        .pipe(gulp.dest('lib'));
+});
+
 gulp.task('watch', ['default'], () => {
     gulp.watch('src/**/*.ts', ['build:ts']);
 });
 
 gulp.task('default', cb => {
-    runSequence('clean', 'build:ts', cb);
+    runSequence('clean', 'copy:json', 'build:ts', cb);
 });
