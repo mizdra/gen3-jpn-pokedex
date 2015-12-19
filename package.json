@@ -15,6 +15,14 @@
   "repository": "mizdra/gen3-jpn-pokedex",
   "license": "MIT",
   "devDependencies": {
+    "del": "^2.2.0",
+    "gulp": "^3.9.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-typescript": "^2.10.0",
+    "gulp-uglify": "^1.5.1",
+    "merge2": "^0.3.6",
+    "power-assert": "^1.2.0",
+    "run-sequence": "^1.1.5"
   },
   "engines": {
     "node": ">= 0.10.0",
@@ -27,6 +35,6 @@
     "dist"
   ],
   "dependencies": {
-    "@mizdra/gen3-poke-data": "^2.0.0"
+    "@mizdra/gen3-poke-data": "^2.1.0"
   }
 }
