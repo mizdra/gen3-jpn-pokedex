@@ -4,7 +4,8 @@
   "version": "2.0.0",
   "author": "mizdra <pp.mizdra@gmail.com>",
   "homepage": "https://github.com/mizdra/gen3-jpn-pokedex",
-  "main": "dist/index.js",
+  "main": "./lib/index.js",
+  "typings": "./lib/index.d.ts",
   "keywords": [
     "pokemon",
     "rng"
