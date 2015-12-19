@@ -1,4 +1,4 @@
-import PokeData from '@mizdra/gen3-poke-data';
+import {PokeData} from '@mizdra/gen3-poke-data';
 
 export const フシギダネ: PokeData = new PokeData({
     "id": 1,

@@ -1,7 +1,7 @@
 import assert from 'power-assert';
 import {フシギダネ, ピカチュウ, ハピナス, セレビィ} from './sample-poke-data';
 import pokedex from '../';
-import PokeData from '@mizdra/gen3-poke-data';
+import {PokeData} from '@mizdra/gen3-poke-data';
 
 describe('pokedex', () => {
 
