@@ -1,0 +1,41 @@
+{
+  "repos": [
+    {
+      "url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+      "ref": "master"
+    }
+  ],
+  "path": "typings",
+  "bundle": "typings/bundle.d.ts",
+  "link": {
+    "npm": {
+      "include": true
+    }
+  },
+  "dependencies": {
+    "run-sequence/run-sequence.d.ts": {
+      "ref": "40c60850ad6c8175a62d5ab48c4e016ea5b3dffe"
+    },
+    "del/del.d.ts": {
+      "ref": "40c60850ad6c8175a62d5ab48c4e016ea5b3dffe"
+    },
+    "gulp/gulp.d.ts": {
+      "ref": "40c60850ad6c8175a62d5ab48c4e016ea5b3dffe"
+    },
+    "gulp-typescript/gulp-typescript.d.ts": {
+      "ref": "40c60850ad6c8175a62d5ab48c4e016ea5b3dffe"
+    },
+    "gulp-sourcemaps/gulp-sourcemaps.d.ts": {
+      "ref": "40c60850ad6c8175a62d5ab48c4e016ea5b3dffe"
+    },
+    "gulp-uglify/gulp-uglify.d.ts": {
+      "ref": "40c60850ad6c8175a62d5ab48c4e016ea5b3dffe"
+    },
+    "merge2/merge2.d.ts": {
+      "ref": "40c60850ad6c8175a62d5ab48c4e016ea5b3dffe"
+    },
+    "power-assert/power-assert.d.ts": {
+      "ref": "40c60850ad6c8175a62d5ab48c4e016ea5b3dffe"
+    }
+  }
+}
