@@ -18,7 +18,7 @@ gulp.task('build:ts', () => {
         .pipe(sourcemaps.init())
         .pipe(ts(tsProject));
 
-    return merge([
+    merge([
         tsResult.dts.pipe(gulp.dest('lib')),
         tsResult.js
             .pipe(uglify())
