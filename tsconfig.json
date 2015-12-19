@@ -4,7 +4,6 @@
         "target": "ES5",
         "noImplicitAny": true,
         "removeComments": false,
-        "preserveConstEnums": true,
-        "sourceMap": true
+        "preserveConstEnums": true
     }
 }
