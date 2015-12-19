@@ -1,5 +1,3 @@
-'use asm';
-
 import PokeData from '@mizdra/gen3-poke-data';
 const json = require('./pokedex.json');
 
