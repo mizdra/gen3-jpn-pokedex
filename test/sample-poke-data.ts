@@ -1,9 +1,9 @@
 import PokeData from '@mizdra/gen3-poke-data';
 
-export const sample1: PokeData = new PokeData({
+export const poke1: PokeData = new PokeData({
     "id": 10,
     "national_id": 20,
-    "name": "Sample1",
+    "name": "Poke1",
     "form_name": "フォルム",
     "height": 30,
     "weight": 40,
