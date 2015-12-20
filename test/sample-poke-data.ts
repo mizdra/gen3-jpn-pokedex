@@ -140,3 +140,135 @@ export const セレビィ: PokeData = new PokeData({
     },
     "abilities": ["しぜんかいふく"]
 });
+
+export const デオキシス: PokeData = new PokeData({
+    "id": 416,
+    "national_id": 386,
+    "name": "デオキシス",
+    "form_name": "ノーマルフォルム",
+    "height": 17,
+    "weight": 608,
+    "types": ["エスパー"],
+    "base_stats": [
+        50,
+        150,
+        50,
+        150,
+        150,
+        50
+    ],
+    "gender_threshold": 255,
+    "catch_rate": 3,
+    "held_items": {
+        "rse": {
+            "rarely": null,
+            "sometimes": null,
+            "always": null
+        },
+        "frlg": {
+            "rarely": null,
+            "sometimes": null,
+            "always": null
+        }
+    },
+    "abilities": ["プレッシャー"]
+});
+
+export const デオキシス攻: PokeData = new PokeData({
+    "id": 417,
+    "national_id": 386,
+    "name": "デオキシス",
+    "form_name": "アタックフォルム",
+    "height": 17,
+    "weight": 608,
+    "types": ["エスパー"],
+    "base_stats": [
+        50,
+        180,
+        20,
+        150,
+        180,
+        20
+    ],
+    "gender_threshold": 255,
+    "catch_rate": 3,
+    "held_items": {
+        "rse": {
+            "rarely": null,
+            "sometimes": null,
+            "always": null
+        },
+        "frlg": {
+            "rarely": null,
+            "sometimes": null,
+            "always": null
+        }
+    },
+    "abilities": ["プレッシャー"]
+});
+
+export const デオキシス守: PokeData = new PokeData({
+    "id": 418,
+    "national_id": 386,
+    "name": "デオキシス",
+    "form_name": "ディフェンスフォルム",
+    "height": 17,
+    "weight": 608,
+    "types": ["エスパー"],
+    "base_stats": [
+        50,
+        70,
+        160,
+        90,
+        70,
+        160
+    ],
+    "gender_threshold": 255,
+    "catch_rate": 3,
+    "held_items": {
+        "rse": {
+            "rarely": null,
+            "sometimes": null,
+            "always": null
+        },
+        "frlg": {
+            "rarely": null,
+            "sometimes": null,
+            "always": null
+        }
+    },
+    "abilities": ["プレッシャー"]
+});
+
+export const デオキシス速: PokeData = new PokeData({
+    "id": 419,
+    "national_id": 386,
+    "name": "デオキシス",
+    "form_name": "スピードフォルム",
+    "height": 17,
+    "weight": 608,
+    "types": ["エスパー"],
+    "base_stats": [
+        50,
+        95,
+        90,
+        180,
+        95,
+        90
+    ],
+    "gender_threshold": 255,
+    "catch_rate": 3,
+    "held_items": {
+        "rse": {
+            "rarely": null,
+            "sometimes": null,
+            "always": null
+        },
+        "frlg": {
+            "rarely": null,
+            "sometimes": null,
+            "always": null
+        }
+    },
+    "abilities": ["プレッシャー"]
+});
