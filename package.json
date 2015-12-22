@@ -35,7 +35,7 @@
     "LICENSE",
     "README.md",
     "package.json",
-    "dist"
+    "lib"
   ],
   "dependencies": {
     "@mizdra/gen3-poke-data": "^3.0.0"
