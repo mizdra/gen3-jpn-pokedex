@@ -6,48 +6,58 @@ import {PokeData} from '@mizdra/gen3-poke-data';
 describe('pokedex', () => {
 
     it('id', () => {
-        let actual = pokedex.filter(p => p.id === 416);
-        let expect = [デオキシス];
+        let actual = pokedex
+            .filter(p => p.id === 416)
+            .map(p => p.name);
+        let expect = ['デオキシス'];
         assert.deepEqual(actual, expect);
     });
 
     it('nationalId', () => {
-        let actual = pokedex.filter(p => p.nationalId === 386);
-        let expect = [デオキシス, デオキシス攻, デオキシス守, デオキシス速];
+        let actual = pokedex
+            .filter(p => p.nationalId === 386)
+            .map(p => p.name);
+        let expect = ['デオキシス', 'デオキシス', 'デオキシス', 'デオキシス'];
         assert.deepEqual(actual, expect);
     });
 
     it('name', () => {
-        let actual = pokedex.filter(p => p.name === 'フシギダネ');
-        let expect = [フシギダネ];
+        let actual = pokedex
+            .filter(p => p.name === 'フシギダネ')
+            .map(p => p.name);
+        let expect = ['フシギダネ'];
         assert.deepEqual(actual, expect);
     });
 
     it('formName', () => {
-        let actual = pokedex.filter(p => p.formName === 'ノーマルフォルム');
-        let expect = [デオキシス];
+        let actual = pokedex
+            .filter(p => p.formName === 'ノーマルフォルム')
+            .map(p => p.name);
+        let expect = ['デオキシス'];
         assert.deepEqual(actual, expect);
     });
 
     it('height', () => {
-        let actual = pokedex.filter(
-            p => p.height === 7 && p.types[0] === 'くさ'
-        );
-        let expect = [フシギダネ, マダツボミ];
+        let actual = pokedex
+            .filter(p => p.height === 7 && p.types[0] === 'くさ')
+            .map(p => p.name);
+        let expect = ['フシギダネ', 'マダツボミ'];
         assert.deepEqual(actual, expect);
     });
 
     it('weight', () => {
-        let actual = pokedex.filter(poke =>
-            poke.weight === 608
-        );
-        let expect = [デオキシス, デオキシス攻, デオキシス守, デオキシス速];
+        let actual = pokedex
+            .filter(poke => poke.weight === 608)
+            .map(p => p.name);
+        let expect = ['デオキシス', 'デオキシス', 'デオキシス', 'デオキシス'];
         assert.deepEqual(actual, expect);
     });
 
     it('types', () => {
-        let actual = pokedex.find(p => p.types[0] === 'でんき');
-        let expect = ピカチュウ;
+        let actual = pokedex
+            .find(p => p.types[0] === 'でんき')
+            .map(p => p.name);
+        let expect = 'ピカチュウ';
         assert.deepEqual(actual, expect);
     });
 
