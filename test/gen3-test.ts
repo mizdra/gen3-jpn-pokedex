@@ -8,25 +8,25 @@ describe('pokedex', () => {
     it('id', () => {
         let actual = pokedex.filter(p => p.id === 416);
         let expect = [デオキシス];
-        assert(actual === expect);
+        assert.deepEqual(actual, expect);
     });
 
     it('nationalId', () => {
         let actual = pokedex.filter(p => p.nationalId === 386);
         let expect = [デオキシス, デオキシス攻, デオキシス守, デオキシス速];
-        assert(actual === expect);
+        assert.deepEqual(actual, expect);
     });
 
     it('name', () => {
         let actual = pokedex.filter(p => p.name === 'フシギダネ');
         let expect = [フシギダネ];
-        assert(actual === expect);
+        assert.deepEqual(actual, expect);
     });
 
     it('formName', () => {
         let actual = pokedex.filter(p => p.formName === 'ノーマルフォルム');
         let expect = [デオキシス];
-        assert(actual === expect);
+        assert.deepEqual(actual, expect);
     });
 
     it('height', () => {
@@ -34,7 +34,7 @@ describe('pokedex', () => {
             p => p.height === 7 && p.types.includes('くさ')
         );
         let expect = [フシギダネ, マダツボミ];
-        assert(actual === expect);
+        assert.deepEqual(actual, expect);
     });
 
     it('weight', () => {
@@ -42,13 +42,13 @@ describe('pokedex', () => {
             poke.weight === 608
         );
         let expect = [デオキシス, デオキシス攻, デオキシス守, デオキシス速];
-        assert.notDeepEqual(actual, expect);
+        assert.deepEqual(actual, expect);
     });
 
     it('types', () => {
         let actual = pokedex.find(p => p.types.includes('でんき'));
         let expect = ピカチュウ;
-        assert(actual === expect);
+        assert.deepEqual(actual, expect);
     });
 
     it('baseStats', () => {
@@ -56,7 +56,7 @@ describe('pokedex', () => {
             p.baseStats[0] >= 200 && p.baseStats[1] >= 10
         );
         let expect = [フシギダネ];
-        assert(actual === expect);
+        assert.deepEqual(actual, expect);
     });
 
     it('genderThreshold', () => {
@@ -75,7 +75,7 @@ describe('pokedex', () => {
             'バルビート',
             'ラティオス'
         ];
-        assert(actual === expect);
+        assert.deepEqual(actual, expect);
     });
 
     it('catchRate', () => {
@@ -107,7 +107,7 @@ describe('pokedex', () => {
             'デオキシス',
             'デオキシス'
         ];
-        assert(actual === expect);
+        assert.deepEqual(actual, expect);
     });
 
     it('heldItems', () => {
@@ -115,7 +115,7 @@ describe('pokedex', () => {
             .filter(p => p.heldItems.frlg.rarely === 'りゅうのウロコ')
             .map(p => p.name);
         let expect = ['キングドラ', 'タツベイ', 'コモルー', 'ボーマンダ'];
-        assert(actual === expect);
+        assert.deepEqual(actual, expect);
     });
 
     it('abilities', () => {
@@ -123,6 +123,6 @@ describe('pokedex', () => {
             .filter(p => p.abilities[0] === 'しぜんかいふく' && p.abilities[1] === 'てんのめぐみ')
             .map(p => p.name);
         let expect = ['ラッキー', 'ハピナス'];
-        assert(actual === expect);
+        assert.deepEqual(actual, expect);
     });
 });
