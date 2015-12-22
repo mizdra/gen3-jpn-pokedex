@@ -31,7 +31,7 @@ describe('pokedex', () => {
 
     it('height', () => {
         let actual = pokedex.filter(
-            p => p.height === 7 && p.types.includes('くさ')
+            p => p.height === 7 && p.types[0] === 'くさ'
         );
         let expect = [フシギダネ, マダツボミ];
         assert.deepEqual(actual, expect);
@@ -46,7 +46,7 @@ describe('pokedex', () => {
     });
 
     it('types', () => {
-        let actual = pokedex.find(p => p.types.includes('でんき'));
+        let actual = pokedex.find(p => p.types[0] === 'でんき');
         let expect = ピカチュウ;
         assert.deepEqual(actual, expect);
     });
