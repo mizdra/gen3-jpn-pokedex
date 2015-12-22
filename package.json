@@ -27,10 +27,6 @@
     "run-sequence": "^1.1.5",
     "typescript-require": "^0.2.9-1"
   },
-  "engines": {
-    "node": ">= 0.10.0",
-    "npm": ">= 2.13.5"
-  },
   "files": [
     "LICENSE",
     "README.md",
