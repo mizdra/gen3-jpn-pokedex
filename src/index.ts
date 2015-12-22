@@ -1,4 +1,4 @@
-/// <reference path='../typings/bundle.d.ts'/>
+/// <reference path='../typings/node/node.d.ts'/>
 
 import {PokeData, JSONSchema} from '@mizdra/gen3-poke-data';
 const json: JSONSchema[] = require('./pokedex.json');
