@@ -11,7 +11,7 @@
     "rng"
   ],
   "scripts": {
-    "test": "mocha --compilers js:babel/register test/**/*.js"
+    "test": "mocha --compilers ts:espower-typescript/guess test/**/*-test.ts"
   },
   "repository": "mizdra/gen3-jpn-pokedex",
   "license": "MIT",
