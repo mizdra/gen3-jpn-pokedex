@@ -1,7 +1,7 @@
 {
   "name": "@mizdra/gen3-jpn-pokedex",
   "description": "日本語ポケモン図鑑クラス",
-  "version": "2.2.0",
+  "version": "2.2.1",
   "author": "mizdra <pp.mizdra@gmail.com>",
   "homepage": "https://github.com/mizdra/gen3-jpn-pokedex",
   "main": "./lib/index.js",
