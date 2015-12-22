@@ -35,6 +35,6 @@
     "lib"
   ],
   "dependencies": {
-    "@mizdra/gen3-poke-data": "^3.0.0"
+    "@mizdra/gen3-poke-data": "^3.1.1"
   }
 }
