@@ -52,10 +52,9 @@ describe('pokedex', () => {
     });
 
     it('baseStats', () => {
-        let actual = pokedex.filter(p =>
-            p.baseStats[0] >= 200 && p.baseStats[1] >= 10
-        );
-        let expect = [フシギダネ];
+        let actual = pokedex.filter(p => p.baseStats[0] >= 200 && p.baseStats[1] >= 10)
+            .map(p => p.name);
+        let expect = ['ハピナス'];
         assert.deepEqual(actual, expect);
     });
 
