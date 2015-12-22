@@ -69,6 +69,42 @@ export const ピカチュウ: PokeData = new PokeData({
     "abilities": ["せいでんき"]
 });
 
+export const マダツボミ: PokeData = new PokeData({
+    "id": 69,
+    "national_id": 69,
+    "name": "マダツボミ",
+    "form_name": null,
+    "height": 7,
+    "weight": 40,
+    "types": [
+        "くさ",
+        "どく"
+    ],
+    "base_stats": [
+        50,
+        75,
+        35,
+        40,
+        70,
+        30
+    ],
+    "gender_threshold": 127,
+    "catch_rate": 255,
+    "held_items": {
+        "rse": {
+            "rarely": null,
+            "sometimes": null,
+            "always": null
+        },
+        "frlg": {
+            "rarely": null,
+            "sometimes": null,
+            "always": null
+        }
+    },
+    "abilities": ["ようりょくそ"]
+});
+
 export const ハピナス: PokeData = new PokeData({
     "id": 269,
     "national_id": 242,
