@@ -55,9 +55,9 @@ describe('pokedex', () => {
 
     it('types', () => {
         let actual = pokedex
-            .find(p => p.types[0] === 'でんき')
+            .filter(p => p.types.length === 1 && p.types[0] === 'ドラゴン')
             .map(p => p.name);
-        let expect = 'ピカチュウ';
+        let expect = ['ミニリュウ', 'ハクリュー', 'タツベイ', 'コモルー'];
         assert.deepEqual(actual, expect);
     });
 
