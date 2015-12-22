@@ -1,5 +1,4 @@
 import assert from 'power-assert';
-import {フシギダネ, ピカチュウ, マダツボミ, ハピナス, セレビィ, デオキシス, デオキシス攻, デオキシス守, デオキシス速} from './sample-poke-data';
 import pokedex from '../';
 import {PokeData} from '@mizdra/gen3-poke-data';
 
