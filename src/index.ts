@@ -1,5 +1,7 @@
 /// <reference path='../typings/node/node.d.ts'/>
 
+'use strict';
+
 import {PokeData, JSONSchema} from '@mizdra/gen3-poke-data';
 const json: JSONSchema[] = require('./pokedex.json');
 

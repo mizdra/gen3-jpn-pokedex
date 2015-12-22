@@ -1,3 +1,5 @@
+'use strict';
+
 // Import modules
 import runSequence = require('run-sequence');
 import del = require('del');

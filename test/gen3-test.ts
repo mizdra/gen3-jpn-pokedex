@@ -1,3 +1,5 @@
+'use strict';
+
 import assert from 'power-assert';
 import pokedex from '../';
 import {PokeData} from '@mizdra/gen3-poke-data';
